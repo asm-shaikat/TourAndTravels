@@ -45,6 +45,90 @@ header {
     display: none;
 }
 
+main{
+    margin-left: 40px;
+}
+.hero {
+    background-image: url('/public/Images/hero.png');
+    background-size: cover;
+    height: 80vh;
+    padding: 10px; /* Adjust this value as needed */
+    width: calc(100% - 90px);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+.hero h1{
+    color: white;
+    font-size: 80px;
+}
+.hero p{
+    color: white;
+}
+.input-grp{
+    background-color: white;
+    opacity: .7;
+    display: flex;
+    width: 70%;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+}
+.input-grp input[type="text"]{
+
+    height: 30px;
+    padding: 10px;
+}
+
+.input-grp input[type="text"]:hover{
+    outline: none;
+}
+
+.input-grp button{
+    background-color: orangered;
+    color: white;
+    height: 30px;
+    border: none;
+}
+
+.popular-tour{
+    margin-top: 100px;
+    display: flex;
+}
+
+.popular-tour-p{
+    height: 100vh;
+    width: 50%;
+}
+.pt-1{
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+.pt-2{
+    color: grey;
+    margin-bottom: 10px;
+}
+.pt-3 li{
+    margin-left: 40px;
+    font-size: 24px;
+    margin-bottom: 8px;
+}
+.pt-4{
+    color: grey;
+    margin-bottom: 10px;
+}
+.popular-tour button{
+    width: 100px;
+    height: 30px;
+    background-color: orangered;
+    border: none;
+    color: white;
+    font-weight: bolder;
+}
+.popular-tour-img{
+    width: 50%;
+}
 @media screen and (max-width: 600px) {
     .nav-main {
         display: none;
@@ -81,5 +165,22 @@ header {
         color: white;
         margin: 15px;
         list-style-type: none;
+    }
+
+    .popular-tour{
+        flex-direction: column;
+    }
+
+    .pt-1{
+        font-size: 30px;
+    }
+    .pt-2{
+        font-size: 18px;
+    }
+    .pt-3 li{
+        font-size: 12px;
+    }
+    .popular-tour-img img{
+        padding: 10px;
     }
 }
