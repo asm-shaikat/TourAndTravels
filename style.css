@@ -129,6 +129,36 @@ main{
 .popular-tour-img{
     width: 50%;
 }
+footer{
+    background-color: #F3F3F3;
+    padding: 50px;
+}
+
+.footer-head{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.ft-p{
+    text-align: center;
+    margin-bottom: 40px;
+}
+.footer-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-icon i{
+    padding: 10px;
+    margin-bottom: 20px;
+}
+.fi-p{
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
 @media screen and (max-width: 600px) {
     .nav-main {
         display: none;
