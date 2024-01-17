@@ -1,9 +1,10 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
-
+main{
+    margin-left: 100px;
+}
 .brand{
     display: flex;
 }
@@ -45,9 +46,7 @@ header {
     display: none;
 }
 
-main{
-    margin-left: 40px;
-}
+
 .hero {
     background-image: url('/public/Images/hero.png');
     background-size: cover;
@@ -129,6 +128,70 @@ main{
 .popular-tour-img{
     width: 50%;
 }
+.newsletter{
+    display: flex;
+    margin-bottom: 100px;
+    justify-content:space-between;
+    margin-right: 50px;
+}
+.newsform{
+    border: 1px solid orangered;
+    padding: 40px;
+    border-radius: 20px;
+    width: 30%;
+}
+.newsform-p1{
+    font-size: 40px;
+    font-weight: bolder;
+}
+.newsform-p2{
+    color: grey;
+    margin-bottom: 30px;
+}
+.newsform-fi-1{
+    margin-top: 30px;
+}
+
+.newsform-fi-1 input, .newsform-fi-2 input{
+    height: 30px;
+    width: 95%;
+    padding: 8px;
+    margin-bottom: 40px;
+    background-color: gainsboro;
+    border: none;
+}
+
+.newsform button{
+    width: 100%;
+    height: 40px;
+    border: none;
+    background-color: orangered;
+    color: white;
+    font-weight: bolder;
+}
+.news-image{
+    position: relative
+
+}
+.news-off{
+    background-color: orangered;
+    width: 300px;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    border-radius: 10px;
+    position: absolute;
+    margin-top: 30%; 
+    margin-left: 50%;
+    transform: rotate(-30deg);
+}
+.news-off-p2{
+    font-weight: bolder;
+    font-size: x-large;
+}
 footer{
     background-color: #F3F3F3;
     padding: 50px;
@@ -160,6 +223,7 @@ footer{
     margin-bottom: 60px;
 }
 @media screen and (max-width: 600px) {
+   
     .nav-main {
         display: none;
     }
@@ -212,5 +276,48 @@ footer{
     }
     .popular-tour-img img{
         padding: 10px;
+    }
+
+    .newsletter{
+        display: flex;
+        flex-direction: column;
+        width: calc(100% - 10px);
+        align-items: center;
+        justify-content: center;
+    }
+
+    .newsform{
+        border: 1px solid orangered;
+        padding: 20px;
+        margin-bottom: 50px;
+        width: 90%;
+    }
+    .newsform-p1{
+        font-size: 20px;
+        font-weight: bolder;
+    }
+    .newsform-p2{
+        font: 18px;
+        color: grey;
+        margin-bottom: 30px;
+    }
+    
+    .newsform-fi-1 input, .newsform-fi-2 input{
+        height: 30px;
+        width: 100%;
+        padding: 4px;
+        margin-bottom: 40px;
+    }
+    .newsform button{
+        width: 100%;
+        height: 40px;
+        border: none;
+        background-color: orangered;
+        color: white;
+        font-weight: bolder;
+    }
+    .news-imgage img{
+        width: 70%;
+        padding: 50px;
     }
 }
