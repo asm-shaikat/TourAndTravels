@@ -94,6 +94,8 @@ header {
 .popular-tour{
     margin-top: 100px;
     display: flex;
+    justify-content: space-between;
+    margin-right: 50px;
 }
 
 .popular-tour-p{
@@ -125,9 +127,145 @@ header {
     color: white;
     font-weight: bolder;
 }
-.popular-tour-img{
-    width: 50%;
+.destination{
+    margin-left: 100px;
+    margin-bottom: 100px;
 }
+.des-head{
+    text-align: center;
+    margin-bottom: 50px;
+}
+.des-head-p1{
+    font-size: 50px;
+}
+.des-head-p2{
+    color: grey;
+}
+.des-r-1{
+    display: flex;
+    gap: 30px;
+}
+.des-r-11{
+    position: relative;
+    display: inline-block;
+}
+.des-r-11 p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+}
+.des-r-12{
+    position: relative;
+    display: inline-block;
+}
+.des-r-12 p{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+}
+.des-r-2{
+    margin-top: 10px;
+}
+.des-r-21 {
+    position: relative;
+    display: inline-block;
+}
+
+.des-r-21 p{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.des-r-22 {
+    position: relative;
+    display: inline-block;
+}
+
+.des-r-22 p{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.des-r-23 {
+    position: relative;
+    display: inline-block;
+}
+
+.des-r-23 p{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.des-r-3{
+    margin-top: 10px;
+    display: flex;
+    gap: 30px;
+}
+
+.des-r-2{
+    display: flex;
+    gap: 25px;
+}
+
+.des-r-31 {
+    position: relative;
+    display: inline-block;
+}
+
+.des-r-31 p{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+}
+.des-r-32 {
+    position: relative;
+    display: inline-block;
+}
+
+.des-r-32 p{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+}
+
 .newsletter{
     display: flex;
     margin-bottom: 100px;
@@ -265,19 +403,58 @@ footer{
         flex-direction: column;
     }
 
+    .popular-tour-p{
+        width: 100%;
+        align-items: center;
+        margin-bottom: -500px;
+    }
+
     .pt-1{
-        font-size: 30px;
+        font-size: 40px;
     }
     .pt-2{
-        font-size: 18px;
+        font-size: 16px;
     }
     .pt-3 li{
         font-size: 12px;
     }
-    .popular-tour-img img{
-        padding: 10px;
+    .popular-tour-img{
+        width: 80%;
+        margin-bottom: 100px;
     }
 
+    /* Destination */
+    .destination{
+        width: 100%;
+    }
+    .des-head-p1{
+        font-size: 40px;
+    }
+
+    .des-head{
+        margin-bottom: 20px;
+    }
+    .des-r-1, .des-r-2, .des-r-3{
+        flex-direction: column;
+    }
+
+    .des-r-11,.des-r-12{
+        position: relative;
+        text-align: center;
+    }
+    .des-r-11,.des-r-12 > img{
+        width: 100%;
+    }
+    .des-r-1 p{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        color: white;
+        font-size: x-large;
+    }
+    .des-r-12 > p{
+        margin-top: 100px; 
+    }
     .newsletter{
         display: flex;
         flex-direction: column;
@@ -316,8 +493,7 @@ footer{
         color: white;
         font-weight: bolder;
     }
-    .news-imgage img{
-        width: 70%;
-        padding: 50px;
+    .news-imgage {
+        width: 80%;
     }
 }
