@@ -51,7 +51,7 @@ header {
     background-image: url('/public/Images/hero.png');
     background-size: cover;
     height: 80vh;
-    padding: 10px; /* Adjust this value as needed */
+    padding: 10px;
     width: calc(100% - 90px);
     display: flex;
     flex-direction: column;
@@ -66,29 +66,36 @@ header {
     color: white;
 }
 .input-grp{
-    background-color: white;
-    opacity: .7;
+    background-color: rgba(255, 255, 255, 0.441);
     display: flex;
     width: 70%;
     height: 50px;
     align-items: center;
     justify-content: center;
+    gap: 20px;
+    margin-left: 15%;
 }
 .input-grp input[type="text"]{
-
-    height: 30px;
+    height: 15px;
     padding: 10px;
+    border: none;
 }
 
 .input-grp input[type="text"]:hover{
     outline: none;
 }
-
+.ig-sec1 select{
+    height: 35px;
+}
+.ig-sec2 select{
+    height: 35px;
+}
 .input-grp button{
     background-color: orangered;
     color: white;
     height: 30px;
     border: none;
+    padding: 10px;
 }
 
 .popular-tour{
@@ -127,8 +134,8 @@ header {
     color: white;
     font-weight: bolder;
 }
-.destination{
-    margin-left: 100px;
+.des-image-galary{
+    margin-left: 250px;
     margin-bottom: 100px;
 }
 .des-head{
@@ -264,6 +271,65 @@ header {
     font-size: 18px;
     font-weight: bold;
     text-align: center;
+}
+.choose{
+    margin-bottom: 100px;
+}
+.choose-head{
+    text-align: center;
+}
+.ch-p1{
+    font-size: 50px;
+}
+
+.ch-p2{
+    color: grey;
+}
+
+.ch-r1{
+    margin-top: 50px;
+    display: flex;
+    gap: 20px;
+}
+.hotel, .service{
+    width: 40%;
+    padding: 50px;
+    background-color: whitesmoke;
+    border-radius: 20px;
+    border: 1px solid rgba(255, 0, 0, 0.274);
+}
+
+.hotel-p1{
+    font-weight: bolder;
+}
+.service-p1{
+    font-weight: bolder;
+}
+.hotel img{
+    width: 70px;
+}
+
+.service img{
+    width: 70px;
+}
+
+.b-price{
+    margin-top: 30px;
+    width: 100%;
+}
+.b-price-mirror{
+    width: 40%;
+    padding: 50px;
+    background-color: whitesmoke;
+    border-radius: 20px;
+    border: 1px solid rgba(255, 0, 0, 0.274);
+    margin-left: 25%;
+}
+.bpm-p1{
+    font-weight: bolder;
+}
+.b-price-mirror img{
+    width: 70px;
 }
 
 .newsletter{
@@ -406,7 +472,6 @@ footer{
     .popular-tour-p{
         width: 100%;
         align-items: center;
-        margin-bottom: -500px;
     }
 
     .pt-1{
@@ -420,12 +485,11 @@ footer{
     }
     .popular-tour-img{
         width: 80%;
-        margin-bottom: 100px;
     }
 
     /* Destination */
-    .destination{
-        width: 100%;
+    .des-head-p1{
+        color: red;
     }
     .des-head-p1{
         font-size: 40px;
@@ -454,6 +518,20 @@ footer{
     }
     .des-r-12 > p{
         margin-top: 100px; 
+    }
+    .ch-r1{
+        flex-direction: column;
+        width: 100%;
+    }
+    .hotel, .service{
+        width: 80%;
+    }
+    .b-price{
+        width: 100%;
+    }
+    .b-price-mirror{
+        width: 80%;
+        margin-left: 2px;
     }
     .newsletter{
         display: flex;
